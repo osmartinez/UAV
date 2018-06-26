@@ -7,7 +7,7 @@ class Monitor():
         self._s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self._address = (direccion,port)
 
-    def ejecutar(self):
+    def run(self):
 	self._board = MultiWii('/dev/ttyUSB0')
         while True:
             try:
